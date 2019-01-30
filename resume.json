@@ -1,0 +1,347 @@
+{
+    "basics": {
+      "name": "Pior Bastida",
+      "label": "Senior Data Engineer @ Shopify",
+      "picture": "http://pbastida.net/profile.jpg",
+      "email": "pior@pbastida.net",
+      "phone": "",
+      "website": "http://pbastida.net",
+      "summary": "Coming from electronic engineering in France, I worked on embedded systems  testing and design then linux driver development. Moving to Montréal, I worked as Linux system administrator which led me to a development and then a system architect role.  I'm passionated, fast learner, and love in-depth knowledge of very diverse technologies. I pursuit industry best practices (project management, development, tests, system architecture...)  ▣ Expertises  • Backend operations for 500K daily-active-users games • Linux system administration • Cloud infrastructure design/documentation/management • Open-source and Agile development process • Python/Java applications operation • HTTP/REST API design • MySQL/MongoDB/DynamoDB operation/optimisation  ▣ Technologies  • AWS: Cloudformation, EC2/ASG, RDS/DynamoDB, S3/Cloudfront, SQS/SNS/SES • Bigdata: Apache Spark/Hadoop, AWS Redshift, AWS Datapipeline, Luigi • System: Ubuntu, Puppet, Rsyslog, Fabric, tools developed in python • Development: Mercurial/Git, Jenkins, Deb packaging • Infrastructure: AWS Cloudwatch, Elasticsearch/Logstash/Kibana, • Metrology: Graphite/StatsD/Grafana, pyramid_metrics • HTTP stack: NGINX/uWSGI/Gevent/Pyramid",
+      "location": {
+        "address": "",
+        "postalCode": "",
+        "city": "Montreal",
+        "countryCode": "CA",
+        "region": "Quebec"
+      },
+      "profiles": [
+        {
+            "network": "GitHub",
+            "username": "pior",
+            "url": "https://github.com/pior"
+        },
+        {
+            "network": "LinkedIn",
+            "username": "piorbastida",
+            "url": "https://www.linkedin.com/in/piorbastida"
+        }
+      ]
+    },
+    "work": [
+      {
+        "company": "Shopify",
+        "position": "Senior Data Engineer",
+        "website": "",
+        "startDate": "2017-12-01",
+        "summary": "◆ End-to-end incremental ETL platform based on Spark (contributor) Native support for out-of-order events PySpark - 100% type hinted Python 3 Deployed on Google Cloud Dataproc",
+        "highlights": []
+      },
+      {
+        "company": "Shopify",
+        "position": "Senior Production Engineer",
+        "website": "",
+        "startDate": "2017-01-01",
+        "summary": "◆ Testing Kubernetes to migrate a existing CI cluster (lead) Moving 4000+ CI agents (~300 VMs) from custom managed EC2 machines to Kubernetes (GKE) cluster  ◆ Anomaly detection service for business events (contributor) Pipeline of micro-services (Python on Kubernetes with Kafka/Redis/MySQL) Automatic segmentation based on business properties Detection based on multiple algorithms",
+        "highlights": [],
+        "endDate": "2017-12-01"
+      },
+      {
+        "company": "Shopify",
+        "position": "Production Engineer",
+        "website": "",
+        "startDate": "2016-07-01",
+        "summary": "◆ ServicesDB (contributor) Internal dashboard to manages services across all platforms Help with discoverability, quality of service (SLO), maintenance, security checks, quality improvements, company-wide policy enforcement  Public mentions: - https://engineering.shopify.com/blogs/engineering/e-commerce-at-scale-inside-shopifys-tech-stack - https://www.infoq.com/news/2018/07/shopify-kubernetes-paas",
+        "highlights": [],
+        "endDate": "2017-01-01"
+      },
+      {
+        "company": "Ludia",
+        "position": "DevOps Architect",
+        "website": "",
+        "startDate": "2014-01-01",
+        "summary": "Role: DevOps Architect/Developer on (micro)services  ◆ Game Marketing and Re-engagement services  Marketing oriented messaging platform for Mobile and Facebook games (in-game message, mobile push, email, Facebook notification).  A highly available and scalable REST API acts as gateway with the games. It provides the mobile push messaging system and rely on another service for events ingestion.  The events pipeline is based on our events ingestion service and Apache Spark and access to modelisations are provided by AWS Redshift. Messages are delivered by AWS SNS/SES and background jobs. Solutions currently evaluated include AWS SWF for background messaging, lambda architecture for realtime analytics.  ◆ Practical and scalable events ingestion micro-service  Light REST API over AWS Kinesis and a resilient micro-batch process relying  on AWS S3 for durable storage. The ease of integration and access management make this micro-service the de-facto solution for collecting complex user activity reports.  ◆ Service for casino style games  This service consists of a complex admin side and scalable game api. Most of the complexity lies in the modelisation of the many subtle slot machine behaviors (both on the slot design tool and on the api).",
+        "highlights": [],
+        "endDate": "2016-06-01"
+      },
+      {
+        "company": "Ludia",
+        "position": "DevOps / Python developer",
+        "website": "",
+        "startDate": "2013-01-01",
+        "summary": "Role: DevOps + Fullstack development on game backend/services  ◆ As a fullstack developer (Python, Javascript/AngularJS)  • Python game backends development • Frontend web development (AngularJS) • Worked on micro-services (In-game user messaging, Facebook achievements) • Background task system • System related pyramid extensions (Healthchecks, service clients...)  ◆ As DevOps/Architect (Keeping the platform on the cutting edge)  • Adapted our platform/infrastructure for mobile games • Improved the assets flow and distribution system for web/mobile games • Operated/Improved our cloud platform • Development workflow improvements   (Multiple work Environments, Continuous Integration,    near Continuous Deployment)",
+        "highlights": [],
+        "endDate": "2014-01-01"
+      },
+      {
+        "company": "Ludia",
+        "position": "System Administrator",
+        "website": "",
+        "startDate": "2011-04-01",
+        "summary": "◆ Built a compartmented cloud platform for facebook/mobile game backends  Each game infrastructure is composed of API backends, realtime backends and an assets distribution setup. Each infrastructure are isolated (network, resources, authorizations) providing easy operational evolution, maintainance and debugability as well as full responsability delegation to game teams.  • Tooling: Python, Fabric • Backend hosting: AWS EC2/AutoScale, Elasticache, SQS, SNS • Backend storage: MongoDB, AWS RDS, DynamoDB • Managemant: Puppet, AWS Cloudformation, IAM, Cloudwatch, Route53 • Assets: AWS S3, Cloudfront  ◆ Managed continuous Integration and continuous deployment  Continous integration is provided by Jenkins and efforts to replicate a real testing environment. Continuous deployment is provided by a deployment pipeline using Jenkins, debian packaging, python tools with Fabric and Puppet.  The development and deployment pipeline proved to be reliable enough to handover complete deployment control to the game teams: this step triggered a real organisational change in the departement.  ◆ Deploy/Maintained internal organisation tools  • Mercurial and subversion internal servers then switched to Bitbucket.com • Private PyPi repo, proxy and Sonatype Nexus • User directory: Openldap, Atlassian Crowd • Communication: Google Apps, Hipchat, Redmine",
+        "highlights": [],
+        "endDate": "2013-01-01"
+      },
+      {
+        "company": "Astral Media Radio Interactive",
+        "position": "Linux Sysadmin consultant",
+        "website": "",
+        "startDate": "2011-01-01",
+        "summary": "The main project was the migration of the audio and metadata streaming infrastructure from Toronto to Montréal. The infrastructure was (at the time) supporting around 120 live radio feeds.  The challenging aspects was the mostly undocumented infrastructure, and the diversity of technologies and equipment from the feeds sources (the radios).  Upside was to work with an amazing team, on a major media infrastructure.",
+        "highlights": [],
+        "endDate": "2011-03-01"
+      },
+      {
+        "company": "Mentel inc",
+        "position": "System and Network Administrator / Architect",
+        "website": "",
+        "startDate": "2008-08-01",
+        "summary": "System and network operations for a VOD site (10Mhits/day, 600Kvideos/mth)  • CDN (Limelight/Level3) • Nging, php, mysql, memcached, Redis • Foundry network and load-balancer equipments • Worked on the internal videos workflow • Developed a few python backends for specific needs  ▣ Projects  • Replaced the manually setup infrastructure with automatic/reproducible infrastructure (Puppet / Git / RPM packages) • Optimized video content delivery • Setup development environments  • Physically moved the infrastructure twice (AMS -> AMS, AMS -> NYC)",
+        "highlights": [],
+        "endDate": "2011-01-01"
+      },
+      {
+        "company": "Savoir-faire Linux",
+        "position": "Consultant en logiciel libre",
+        "website": "",
+        "startDate": "2007-09-01",
+        "summary": "Savoir-Faire Linux propose aux entreprises et aux administrations du Québec un service de consultation spécialisé sur GNU/Linux et les logiciels libres.     Un aperçu de mes projets:     - Gestion de site web à très haut trafic   - Sécurisation de serveurs web sensible   - Rendre scalable une infrastructure web à forte expansion   - Déploiement de solutions emails personnalisées   - Développement de programmes et d'outils d'administration (Python, Bash)   - Déploiement et maintenance de serveurs de fichier en redondance.   - Déploiement de solutions de monitoring zabbix    Technologies utilisées: Apache, Php, Mysql, Python, Postfix, Exim, SpamAssassin, Dspam, Bind, TinyDNS, Proftpd, Vsftpd,     Techniques pratiqués:   Authentification LDAP, Réplication Mysql, Serveur DNS (TLD), Redondance par DRBD, Redondance particulière avec Rsync, Virtualisation avec XEN,",
+        "highlights": [],
+        "endDate": "2008-06-01"
+      },
+      {
+        "company": "ACTIA PCs",
+        "position": "Electronic Engineer",
+        "website": "",
+        "startDate": "2006-01-01",
+        "summary": "• Designed test tooling for industrial and embedded computer • Ported an embedded flash disk driver to Linux",
+        "highlights": [],
+        "endDate": "2007-01-01"
+      },
+      {
+        "company": "ACTIA PCs",
+        "position": "Electronic Engineer (co-op)",
+        "website": "",
+        "startDate": "2001-01-01",
+        "summary": "",
+        "highlights": [],
+        "endDate": "2006-01-01"
+      }
+    ],
+    "education": [
+      {
+        "institution": "Institut de Formation d'Ingénieurs en Techniques Electroniques",
+        "area": "",
+        "studyType": "Master’s Degree",
+        "startDate": "2002-12-31",
+        "gpa": "",
+        "courses": [],
+        "endDate": "2005-12-31"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Linux",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Bash",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Python",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Open Source",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Amazon Web Services (AWS)",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Git",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "MySQL",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "System Administration",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Continuous Integration",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Scalability",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Ubuntu",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "MongoDB",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Amazon EC2",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Web Applications",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "DNS",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Debian",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Nginx",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Memcached",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Redis",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Linux System Administration",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Puppet",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Shell Scripting",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "High Performance Computing",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "C",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "High Availability",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Architecture",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Apache Spark",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Data Science",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Ruby",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Heroku",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Kubernetes",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Google Cloud Platform",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Docker",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Ruby on Rails",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Apache Kafka",
+        "level": "",
+        "keywords": []
+      },
+      {
+        "name": "Golang",
+        "level": "",
+        "keywords": []
+      }
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "fluency": "Professional working proficiency"
+      },
+      {
+        "language": "French",
+        "fluency": "Native or bilingual proficiency"
+      }
+    ],
+    "references": [
+      {
+        "name": "Hadrien David - Dialogue",
+        "reference": "Pior integrated Ludia at the most critical time when I was founding the social game division at Ludia and we were growing fast. In terms of system administration, devops and global architecture, everything was to be done and I needed someone who shared the same technical vision and passion for hard but well done work. With Pior, not only we succeeded in transforming a weak monolith infrastructure into a highly scalable architecture made of multiple microservices, we also shared the same philosophy on why readable code is ultra important, on how the company should organize people's work and on what collaboration really means.   From system administration, Pior expanded his work to developer operations and infrastructure architecture. He naturally became my close assistant and I relied on his advices on every matter: mostly technical, oftenly organisational and sometime on more human level.  Together, we setup continuous integration and deployment with a really high code coverage expectation (95%). We extensively made usage of internal wiki & blog plateform to lean the communication between our service team and the production team by reporting all meeting we did and decision we took. We design highly scalable system using cloud computing that automatically failover and need nearly no maintenance. I enjoyed immensely working with Pior: he is a strong engineer with a really broad skillset. I would work with him anytime in the future."
+      },
+      {
+        "name": "Domingues Miguel - ECRIN Systems",
+        "reference": "Un jeune ingénieur curieux, impliqué et efficace qui, d'après son parcours, a su développer ses nombreuses compétences au fil des expériences. Un collègue agréable dont nous gardons un très bon souvenir."
+      },
+      {
+        "name": "Jean Pierre Ramoul - PARX - Salesforce Experts in D-A-CH & France",
+        "reference": "Travailler quotidiennement avec Pior à été un réel plaisir.   Dès mon arrivée, il a su faciliter mon intégration au sein de l'équipe de support technique et grâce à son implication et ses fortes compétences, j'ai pu monter rapidement en compétences sur les technologies open source. C'est une personne autonome, ponctuelle et loyale. Se relayer sur des périodes d'astreinte n'a jamais été un soucis car le travail était toujours fait correctement. À ses côtés, j'ai également beaucoup appris concernant la relation client."
+      }
+    ]
+  }
